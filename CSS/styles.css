@@ -1,0 +1,110 @@
+:root{
+    --font-familyMerrisi: 'Merriweather', serif;
+    --font-familyMerrisa: 'Merriweather Sans', sans-serif;
+    --font-familyQuicsa: 'Quicksand', sans-serif;
+    --Weights: 500, 700;
+    --Mobile: 375px;
+    --Desktop: 1440px;
+    --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+    --DesaturatedDarkBlue: hsl(214, 17%, 51%);
+    --GrayishBlue: hsl(212, 23%, 69%);
+    --LightGrayishBlue: hsl(210, 46%, 95%);
+}
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--LightGrayishBlue);
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.Container__article{
+    background: white;
+    width: 800px;
+    height: 280px;
+    border-radius: 10px;
+    
+}
+
+.Article{
+    display: flex;
+    flex-direction: row;
+}
+
+.Article__image--size{
+    width: 360px;
+    height: 280px;
+}
+
+.Article__text{
+    margin: 35px 40px 35px 35px;
+}
+
+.Article__text > h1{
+    color: var(--VeryDarkGrayishBlue);
+    font-family: var(--font-familyMerrisi);
+    font-size: 20px;
+    margin: 0;
+}
+
+.Article__text > p {
+    font-family: var(--font-familyQuicsa);
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--DesaturatedDarkBlue);
+    margin: 20px 0 30px;
+}
+
+.Autor{
+    margin-top: 25px;
+    display: flex;
+    gap: 21px;
+    align-items: center;
+}
+
+.Autor__image{
+    width: 45px;
+    height: 45px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+} 
+
+.Autor__image--size{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.Datos__text--titulo{
+    margin: 0;
+    color: var(--VeryDarkGrayishBlue);
+    font-size: 14px;
+    font-family: var(--font-familyQuicsa);
+}
+
+.Datos__text--parrafo{
+    margin: 0;
+    color: var(--GrayishBlue);
+    font-size: 14px;
+    font-family: var(--font-familyQuicsa);
+}
+.icon{
+    background: var(--LightGrayishBlue);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    margin-left: 120px;
+    cursor: pointer;
+} 
+
+svg{
+    position: absolute;
+    bottom: 9.0px;
+    right: 5.3px;
+}
