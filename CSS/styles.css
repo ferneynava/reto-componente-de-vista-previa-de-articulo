@@ -109,6 +109,10 @@ body{
     right: 5.3px;
 }
 
+.inactive{
+    display: none;
+}
+
 .Share{
     width: 230px;
     position: absolute;
