@@ -103,8 +103,47 @@ body{
     cursor: pointer;
 } 
 
-svg{
+.icon > svg{
     position: absolute;
     bottom: 9.0px;
     right: 5.3px;
+}
+
+.Share{
+    width: 230px;
+    position: absolute;
+    background: var(--VeryDarkGrayishBlue);
+    bottom: 440px;
+    right: 530px;
+    border-radius: 10px;
+    
+}
+
+.Container__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.Container__text-share{
+    font-family: var(--font-familyQuicsa);
+    color: var(--LightGrayishBlue);
+    letter-spacing: 3px;
+}
+
+.Container__icon > svg{
+    cursor: pointer;
+}
+
+.Share--diamond{
+    background: var(--VeryDarkGrayishBlue);
+    width: 20px;
+    height: 20px;
+    position:absolute;
+    bottom: -10px;
+    transform: rotate(45deg);
+    right: 95px;
 }
